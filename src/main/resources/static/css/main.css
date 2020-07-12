@@ -6,3 +6,11 @@
 .container-main {
   padding-top: 100px;
 }
+
+.link-button {
+    background: none;
+    border: none;
+    color: #0066ff;
+    text-decoration: underline;
+    cursor: pointer;
+}
