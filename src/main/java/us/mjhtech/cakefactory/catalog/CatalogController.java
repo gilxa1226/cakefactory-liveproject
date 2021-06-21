@@ -19,6 +19,7 @@ public class CatalogController {
     @GetMapping("/")
     ModelAndView index(Model model) {
         model.addAttribute("pastries", this.catalogService.getPastryItems());
+        model.addAttribute("name", "Mike Haller");
 
         return new ModelAndView("main", model.asMap());
     }

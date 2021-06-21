@@ -1,6 +1,7 @@
 package us.mjhtech.cakefactory.catalog.persistence;
 
 
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 import us.mjhtech.cakefactory.catalog.CatalogService;
 import us.mjhtech.cakefactory.catalog.PastryItem;
@@ -9,8 +10,8 @@ import java.util.stream.Collectors;
 import java.util.stream.StreamSupport;
 
 @Component
-public
-class JpaCatalogService implements CatalogService {
+@Primary
+public class JpaCatalogService implements CatalogService {
 
     private final PastryItemRepository pastryItemRepository;
 
